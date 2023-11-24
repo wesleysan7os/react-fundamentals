@@ -30,6 +30,8 @@ export const Post = ({ author, content, source }) => {
 
       <footer>
         <strong>Deixe seu feedback</strong>
+        <textarea placeholder='Escreva um comentário...' />
+        <button type="submit">Publicar</button>
       </footer>
     </article>
   )
