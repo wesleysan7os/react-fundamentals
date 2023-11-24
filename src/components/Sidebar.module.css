@@ -28,6 +28,16 @@
 	outline: 2px solid var(--green-500);
 }
 
+@media(max-width: 768px) {
+  .profile {
+    margin-top: calc(0px - 2.5rem - 6px);
+  }
+	.avatar {
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
 .profile strong {
 	margin-top: 1rem;
 	line-height: 1.6rem;
@@ -41,7 +51,7 @@
 }
 
 .sidebar footer {
-	border: 1px solid var(--gray-600);
+	border-top: 1px solid var(--gray-600);
 	margin-top: 1.5rem;
 	padding: 1.5rem 2rem 2rem;
 }
