@@ -1,13 +1,13 @@
-import { Avatar } from './index.js' 
+import { Avatar, Comment } from './index.js' 
 import styles from './Post.module.css'
 
 export const Post = ({ author, content, source }) => {
   return (
-    <article className={styles.article}>
-      <header className={styles.header}>
+    <article className={styles.post}>
+      <header>
         <div className={styles.author}>
-          <Avatar source={source} />
-          <div>
+          <Avatar source={source} hasBorder />
+          <div className={styles.authorInfo}>
             <strong>{author}</strong>
             <span>Dev Front-end</span>
           </div>
@@ -18,20 +18,21 @@ export const Post = ({ author, content, source }) => {
         >Publicado há 1h</time>
       </header>
 
-      <div className={styles.post}>
+      <div className={styles.content}>
         <p>Fala galeraa 👋</p>
         <p>
           Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, 
           evento da Rocketseat. O nome do projeto é DoctorCare 🚀
         </p>
-        <p>👉 <span>jane.design/doctorcare</span></p>
-        <span>#novoprojeto</span> <span>#nlw</span> <span>#rocketseat</span>
+        <p>👉 <a href=''>jane.design/doctorcare</a></p>
+        <a href=''>#novoprojeto</a> <a href=''>#nlw</a> <a href=''>#rocketseat</a>
       </div>
 
       <footer>
         <strong>Deixe seu feedback</strong>
         <textarea placeholder='Escreva um comentário...' />
         <button type="submit">Publicar</button>
+        <Comment /> 
       </footer>
     </article>
   )

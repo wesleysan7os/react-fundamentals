@@ -1,0 +1,20 @@
+.article > img {
+  margin: 2rem 1rem 0 0;
+}
+
+.authorWrapper {
+  display: flex;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .author {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

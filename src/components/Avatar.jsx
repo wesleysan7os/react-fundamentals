@@ -1,5 +1,5 @@
 import styles from './Avatar.module.css'
 
-export const Avatar = ({ source }) => {
-  return <img className={styles.avatar} src={source} />
+export const Avatar = ({ source, hasBorder }) => {
+  return <img className={ hasBorder && styles.avatarWithBorder} src={source} />
 }
