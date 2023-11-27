@@ -28,12 +28,17 @@ export const Post = ({ author, content, source }) => {
         <a href=''>#novoprojeto</a> <a href=''>#nlw</a> <a href=''>#rocketseat</a>
       </div>
 
-      <footer>
+      <form className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
         <textarea placeholder='Escreva um comentário...' />
         <button type="submit">Publicar</button>
+      </form>
+
+      <div className={styles.commentList}>
         <Comment /> 
-      </footer>
+        <Comment /> 
+        <Comment /> 
+      </div>
     </article>
   )
 }
